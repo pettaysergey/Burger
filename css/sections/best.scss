@@ -1,0 +1,68 @@
+.best {
+	background-image: url(../../bg/second.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh; 
+	min-height: 650px;
+}
+
+.best-content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+	&__title {
+	display: flex;
+	justify-content:center;
+	font-size: 82px;
+	font-family: gagalinregular;
+	color: $black;
+	}
+
+	&__description {
+		padding-top: 80px;
+	}
+}
+
+.advantages {
+	display: flex;
+	justify-content:center;
+
+	&__list {
+		width: 33.3%;
+		padding: 0 10px;
+
+	}
+
+	&__picture {
+		display: flex;
+		justify-content:center;
+		padding-bottom: 26px;
+	}
+
+	&__svg {
+		width: 90px;
+		height: 90px;
+	}
+
+	&__title {
+		display: flex;
+		justify-content:center;
+		padding-bottom: 15px;
+		font-size: 24px;
+		font-family: lifehackmedium;
+		text-align: center;
+		color: $black;
+	}
+
+	&__text {
+		text-align: center;
+		line-height: 1.6;
+		font-family: ubuntulight;
+		font-size: 14px;
+		color: #8f8d8c;
+	}
+}

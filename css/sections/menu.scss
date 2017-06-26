@@ -1,0 +1,96 @@
+.menu {
+	background-image: url(../../bg/fifth.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh; 
+	min-height: 650px;
+	
+	&__title {
+		position: absolute;
+		left: 10%;
+		top: 10%;
+		font-size: 72px;
+		color: $yellow;
+		font-family: gagalinregular;
+	}
+
+	&__list {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	&__item {
+		float: left;
+		height: 100%;
+	}
+
+	&__trigger {
+		height: 100%;
+		display: block;
+		width: 80px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: relative;
+		float: left;
+	}
+
+	&__trigger-text {
+		display: inline-block;
+		font-size: 40px;
+		font-family: gagalinregular;
+		color: #fff;
+		white-space: nowrap;
+		transform: rotate(-90deg);
+		position: absolute;
+		top: 50%;
+		height: 60px;
+		width: 650px;
+		margin-top: -40px;
+		left: 50%;
+		margin-left: -315px;
+		text-align: center;
+	}
+
+	&__description {
+		background-color: rgba(57,59,60,.90);
+		float: left;
+		width: 0px;
+		height: 100%;
+		color: #fff;
+		overflow: hidden;
+		font-family: ubuntulight;
+		font-size: 14px;
+		line-height: 1.8;
+		transition: 0.1s;
+	}
+
+	&__description-text {
+
+		width: 550px;
+		padding: 60px 30px;
+	}
+}
+
+.active-menu {
+	.menu__trigger-text {
+		color: $yellow;
+	}
+
+	.menu__description {	
+		width: 550px;
+	}
+}
+
+
+
+.menu-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	}
+
+

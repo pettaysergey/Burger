@@ -1,0 +1,209 @@
+.delivery {
+    background-image: url(../../bg/seventh.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 650px;
+    &__content-title {
+        text-align: center;
+        font-size: 72px;
+        color: $yellow;
+        font-family: gagalinregular;
+        margin-bottom: 30px;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        color: #fff;
+        font-family: ubuntulight;
+        font-size: 12px;
+    }
+    &__label {
+        font-size: 14px;
+        margin-right: 19px;
+        margin-bottom: 20px;
+        width: 25%;
+    }
+    &_name,
+    &_phone {
+        width: 44%;
+    }
+    &_street {
+        width: 92%;
+    }
+    &_house,
+    &_corps,
+    &_apartment,
+    &_floor {
+        width: 20%;
+    }
+    &__item {}
+    &__text {
+        margin-top: 10px;
+        padding: 5px;
+        width: 100%;
+        line-height: 1.6;
+        font-size: 14px;
+        font-family: ubuntulight;
+        border-radius: 6px;
+        border: transparent;
+    }
+    &__right {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        width: 50%;
+        color: #fff;
+        font-family: ubuntulight;
+    }
+    &__right-content {
+        width: 100%;
+        height: 100%;
+    }
+    &__options {
+        margin: 10px 0 15px;
+    }
+    &_comments {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    &__wishes {
+        width: 100%;
+        height: 110px;
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 8px;
+        border: transparent;
+        font-size: 14px;
+        font-family: ubuntulight;
+        resize: none;
+    }
+    &__pay {
+        position: absolute;
+        display: inline-block;
+        top: 67%;
+        font-size: 14px;
+    }
+    &__card {
+        position: absolute;
+        top: 67%;
+        left: 35%;
+        font-size: 14px;
+    }
+    &__call {
+        position: absolute;
+        top: 85%;
+        font-size: 14px;
+    }
+    &__buttons {
+        position: absolute;
+        bottom: -10%;
+        display: flex;
+    }
+    &__reset {
+        background: none;
+        border: transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+    &__radio-text {
+        margin-left: 10px;
+    }
+    &__submit {
+        margin-left: 0;
+        margin-right: 20px;
+        cursor: pointer;
+        border: transparent;
+        border-radius: 5px;
+        padding: 11px 17px;
+        background: $orange;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: ubuntumedium;
+        transition: 1s;
+        transition-property: initial;
+        transition-duration: 1s;
+        transition-timing-function: initial;
+        transition-delay: initial;
+    }
+    &__submit:hover {
+        background: #be310b;
+    }
+}
+
+// радиокнопки
+.delivery__radio {
+    display: none;
+}
+
+.delivery__radio-custom {
+    width: 15px;
+    background-color: #fff;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+}
+
+.delivery__radio-custom,
+.delivery__radio-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.delivery__radio:checked+.delivery__radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: $orange;
+    border-radius: 2px;
+}
+
+.delivery__radio-custom,
+.delivery__radio:checked+.delivery__radio-custom::before {
+    border-radius: 50%;
+}
+
+// чекбокс
+.delivery__checkbox-custom {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    margin-right: 10px;
+    position: relative;
+}
+
+.delivery__checkbox-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.delivery__checkbox-disabled {
+    display: none;
+    &:checked+.delivery__checkbox-custom .delivery__checkbox-iconCheck {
+        display: block;
+    }
+}
+
+.delivery__checkbox-iconCheck {
+    display: none;
+    width: 11px;
+    height: 9px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: #e45028;
+}

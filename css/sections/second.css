@@ -1,0 +1,31 @@
+.best {
+  background-image: url(../../bg/second.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 650px; }
+
+.second {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.second__title {
+  font-size: 50px; }
+
+.advantages__list {
+  width: 320px;
+  padding: 0 20px; }
+
+.advantages__picture {
+  padding-bottom: 15px; }
+
+.advantages__title {
+  padding-bottom: 15px; }

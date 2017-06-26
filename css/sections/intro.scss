@@ -1,0 +1,132 @@
+.intro {
+	background-image: url(../../bg/first_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh; 
+	min-height: 650px;
+	font-family: ubuntumedium;
+	position: relative;
+	transition: 2s;
+	transition-property: initial;
+    transition-duration: 2s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+
+	&__down-svg {
+		width: 22px;
+		height: 20px;
+		position: absolute;
+		left: 50%;
+		bottom: 6%;
+	}
+}
+
+ .container {
+	width: 940px;
+	margin: 0 auto;
+	height: 100%;
+	}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo__svg {
+	display: block;
+	width: 98px;
+	height: 98px;
+}
+
+.about {
+	text-transform: uppercase;
+
+	&__menu {
+		display: flex;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+
+	} 
+
+	&__item {
+		margin-left: 37px;
+		list-style-type: disc;
+		color: #fff;
+		opacity: 1;
+		transition: 0.5s;
+	}
+
+	&__item:first-child {
+		list-style-type: none;
+	}
+
+	&__item:hover {
+		border-bottom: 1px solid #fff;
+		opacity: 0.7;
+	}
+
+	&__title {
+		font-size: 13px;
+		color: #fff;
+	}
+}
+
+.buy {
+	display: flex;
+	justify-content: center;
+	margin-left: 25px;
+	border-radius: 5px;
+	padding: 11px 17px;
+	background: $orange;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: ubuntumedium;
+	transition: 1s;
+	transition-property: initial;
+    transition-duration: 1s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+
+	&:hover {
+		background: #be310b;
+	}
+}
+
+
+.intro-content {
+	display: flex;
+	align-items: center;
+	height: 91%;
+	font-size: 40px;
+	padding-bottom: 120px;
+	padding-left: 10px;
+
+	&__image {
+		margin-right: 10px;
+		padding-bottom: 40px;
+	}
+
+	&__title {
+		color: $yellow;
+		font-family: gagalinregular;
+		font-size: 72px;
+	}
+
+	&__text {
+		color: #fff;
+		font-size: 1.5em;
+		font-family: lifehackmedium;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+.map {
+	height: 100vh; 
+	min-height: 650px;
+	font-family: ubuntumedium;
+
+
+	&__image {
+		height: calc(100% - 60px);
+		// background-image: url(../../bg/map_1.jpg);
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		// background-position: center center;
+	}
+}
+
+.footer {
+	background-image: url(../../bg/footer.jpg);
+	height: 60px;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-family: ubuntulight;
+
+    &__content {
+    	display: flex;
+    	justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left-address {
+    	padding-bottom: 7px;
+    }
+
+    &__left-icon {
+        width: 12px;
+        height: 12px;
+        fill: $orange;
+        margin-right: 5px;
+    }
+
+    &__left-phone {
+    	color: $orange;
+    	font-family: ubuntumedium;
+    }
+    
+    &__socials {
+        display: flex;
+    }
+
+    &__socials-item {
+        margin-left: 20px;
+    }
+
+    &__socials-icon {
+        width: 18px;
+        height: 18px;
+        fill: #5b5b5b;
+        transition: 0.5s;
+        transition-property: initial;
+        transition-duration: 0.5s;
+        transition-timing-function: initial;
+        transition-delay: initial;
+        }
+
+    &__socials-icon:hover {
+        fill:#fff;
+    }
+
+}

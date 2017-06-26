@@ -1,0 +1,35 @@
+.best {
+	background-image: url(../../bg/second.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh; 
+	min-height: 650px;
+}
+
+.second {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.second__title {
+	font-size: 50px;
+}
+
+.advantages {
+
+	&__list {
+		width: 320px;
+		padding: 0 20px;
+
+	}
+
+	&__picture {
+		padding-bottom: 15px;
+	}
+
+	&__title {
+		padding-bottom: 15px;
+	}
+}
